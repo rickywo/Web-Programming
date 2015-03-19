@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+
+    <!-- We will cover style later. Skip down to the body tag -->
+    <style>
+		@font-face {
+		  font-family: "Museo300";
+		  src: url("http://mams.rmit.edu.au/6crm0fncu40d1.eot");
+		  src: url("http://mams.rmit.edu.au/6crm0fncu40d1.eot?#iefix") format("embedded-opentype"),
+			   url("http://mams.rmit.edu.au/x3u2oqckf06.ttf") format("truetype"),
+			   url("http://mams.rmit.edu.au/ymm4mqckf06.svg#Museo300") format("svg");
+		  font-weight: normal;
+		}
+
+		@font-face {
+		  font-family: "Museo500";
+		  src: url("http://mams.rmit.edu.au/6fpj1fncu40d1.eot");
+		  src: url("http://mams.rmit.edu.au/6fpj1fncu40d1.eot?#iefix") format("embedded-opentype"),
+			   url("http://mams.rmit.edu.au/nwhtz3g0e17.ttf") format("truetype"),
+			   url("http://mams.rmit.edu.au/9u52z3g0e17.svg#Museo500") format("svg");
+		  font-weight: normal;
+		}
+      html,
+      body
+      {
+        margin:0px;
+        padding:0px;
+		color:black;
+		font-family: 'Museo500', 'Museo500FF', Arial;
+      }
+	  
+      header
+      {
+        font-size:300%;
+        font-weight:bold;
+        background-color:#0bb;
+		color:white;
+		padding:10px;
+	  }
+	  
+	  header *
+	  {
+		vertical-align:middle; 
+        margin-right:40px;		
+	  }
+
+      main
+      {
+        background-color:rgb(255,250,250);
+	    padding:10px 10px 50px 30px;
+      }
+	  
+      nav,
+      footer
+      {     
+        background-color:rgb(220,210,210);
+		padding:10px;
+      }
+	  
+	  footer *
+	  {
+	    vertical-align:middle;
+	  }
+	  
+
+	  #timetable
+	  {
+	    border-collapse:collapse;
+		border:2px solid #333;
+	  }
+
+	  #timetable th,
+	  #timetable td
+	  {
+		border:2px solid #333;
+		padding:10px 15px;
+	  }
+	  
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+        <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+        <div><img src='http://mams.rmit.edu.au/pydyrxvec44m.png' alt='rmit logo'/> Put Page Heading Here</div>
+    </header>
+
+    <nav>
+      <a href="a1">Assignment 1 (worth 9%)</a> | <a href="a2">Assignment 2 (worth 10%)</a> | <a href="a3">Assignment 3 (worth 11%)</a>
+    </nav>
+
+    <main>
+      <h2>About me</h2>
+      <p><img src="myphoto.jpg" style="border:0; width:200px; height:200px" alt='my photo' /></p>
+      <p>Put in some details about <strong>yourself</strong> <em>here</em>. hi i'm Ricky</p>
+
+      <hr/>
+      <h3>My class times</h3>
+
+      <table id="timetable">
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      &copy; CHANG YI WU 2015. Put footer info and <a href=' '>more links here</a> |
+      <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;height:31px"
+        src="http://www.w3.org/html/logo/downloads/HTML5_Logo_32.png" alt="HTML Validator" /></a> |
+      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0; height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Validator"/></a>
+        <a href="http://validator.w3.org/check?uri=referer"> Return </a>
+    </footer>
+
+  </body>
+
+</html>
