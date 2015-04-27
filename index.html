@@ -2,152 +2,233 @@
 <html>
 
   <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-
-    <!-- We will cover style later. Skip down to the body tag -->
-    <style>
-		@font-face {
-		  font-family: "Museo300";
-		  src: url("http://mams.rmit.edu.au/6crm0fncu40d1.eot");
-		  src: url("http://mams.rmit.edu.au/6crm0fncu40d1.eot?#iefix") format("embedded-opentype"),
-			   url("http://mams.rmit.edu.au/x3u2oqckf06.ttf") format("truetype"),
-			   url("http://mams.rmit.edu.au/ymm4mqckf06.svg#Museo300") format("svg");
-		  font-weight: normal;
-		}
-
-		@font-face {
-		  font-family: "Museo500";
-		  src: url("http://mams.rmit.edu.au/6fpj1fncu40d1.eot");
-		  src: url("http://mams.rmit.edu.au/6fpj1fncu40d1.eot?#iefix") format("embedded-opentype"),
-			   url("http://mams.rmit.edu.au/nwhtz3g0e17.ttf") format("truetype"),
-			   url("http://mams.rmit.edu.au/9u52z3g0e17.svg#Museo500") format("svg");
-		  font-weight: normal;
-		}
-      html,
-      body
-      {
-        margin:0px;
-        padding:0px;
-		color:black;
-		font-family: 'Museo500', 'Museo500FF', Arial;
-      }
-	  
-      header
-      {
-        font-size:300%;
-        font-weight:bold;
-        background-color:#0bb;
-		color:white;
-		padding:10px;
-	  }
-	  
-	  header *
-	  {
-		vertical-align:middle; 
-        margin-right:40px;		
-	  }
-
-      main
-      {
-        background-color:rgb(255,250,250);
-	    padding:10px 10px 50px 30px;
-      }
-	  
-      nav,
-      footer
-      {     
-        background-color:rgb(220,210,210);
-		padding:10px;
-      }
-	  
-	  footer *
-	  {
-	    vertical-align:middle;
-	  }
-	  
-
-	  #timetable
-	  {
-	    border-collapse:collapse;
-		border:2px solid #333;
-	  }
-
-	  #timetable th,
-	  #timetable td
-	  {
-		border:2px solid #333;
-		padding:10px 15px;
-	  }
-	  
-    </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+      <title>SILVERADO CINEMA</title>
+      <link href='http://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
+      <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+      <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
 
     <header>
-        <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
-        <div><img src='http://mams.rmit.edu.au/pydyrxvec44m.png' alt='rmit logo'/> Put Page Heading Here</div>
+        <img class="head-logo" src="images/logo.png" alt="Logo" height="90" width="290"/>
     </header>
-
+    <div class="share-btn">
+        <ul class="share-buttons">
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&amp;t=" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=&amp;text=:%20" target="_blank" title="Tweet"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+            <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title=&amp;summary=&amp;source=" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+        </ul>
+    </div>
     <nav>
-      <a href="a1">Assignment 1 (worth 9%)</a> | <a href="a2">Assignment 2 (worth 10%)</a> | <a href="a3">Assignment 3 (worth 11%)</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
-      <h2>About me</h2>
-      <p><img src="myphoto.jpg" style="border:0; width:200px; height:200px" alt='my photo' /></p>
-      <p>Put in some details about <strong>yourself</strong> <em>here</em>. hi i'm Ricky</p>
+        <div class="column">
+            <div class="column-sub">
+            <img class="banner" src="images/tdk.jpg">
+                <!-- Original image below sourced for educational purposes: http://www.thedarkknightrises.com/ -->
+            <h1>grant reopening</h1>
+            <p>After weeks of waiting, the grant reopening is going to happen soon. Everyone is welcome. The new comfy seats, high quality screens, and the ultimate surround sound are going to be introduced to you. That's the brand new experience!</p>
+            </div>
+            <div class="column-sub">
+                <h1>Price List</h1>
 
-      <hr/>
-      <h3>My class times</h3>
+                <table class="price-table">
+                    <tr>
+                        <td>
+                            <h2>Type</h2>
+                        </td>
+                        <td>
+                            <h2>Mon - Tue (All Day)<br>
+                                Mon - Fri (1pm only)</h2>
+                        </td>
+                        <td>
+                            <h2>Wed - Fri (not 1pm)<br>
+                                Sat - Sun (All Day)</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Standard-Full</h2>
+                        </td>
+                        <td>
+                            <h3>$12</h3>
+                        </td>
+                        <td>
+                            <h3>$18</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Standard-Conc</h2>
+                        </td>
+                        <td>
+                            <h3>$10</h3>
+                        </td>
+                        <td>
+                            <h3>$15</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Standard-Child</h2>
+                        </td>
+                        <td>
+                            <h3>$8</h3>
+                        </td>
+                        <td>
+                            <h3>$12</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>FirstClass-Adult</h2>
+                        </td>
+                        <td>
+                            <h3>$25</h3>
+                        </td>
+                        <td>
+                            <h3>$30</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>FirstClass-Child</h2>
+                        </td>
+                        <td>
+                            <h3>$20</h3>
+                        </td>
+                        <td>
+                            <h3>$25</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>Beanbag*</h2>
+                        </td>
+                        <td>
+                            <h3>$20</h3>
+                        </td>
+                        <td>
+                            <h3>$30</h3>
+                        </td>
+                    </tr>
+                </table>
 
-      <table id="timetable">
-        <tr>
-          <th></th>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th></th>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <th></th>
-          <td></td>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </table>
+                <h1>Weekly schedule</h1>
+
+                <table class="schedule-table">
+                    <tr>
+                        <td>
+                            <h2>Genre</h2>
+                        </td>
+                        <td>
+                            <h2>Mon/Tue</h2>
+                        </td>
+                        <td>
+                            <h2>Wed/Thu/Fri</h2>
+                        </td>
+                        <td>
+                            <h2>Sat/Sun</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="thumbnail" src="images/genres/Children.png"><br>
+                            <!-- Original image below sourced for educational purposes: http://sirubico.deviantart.com -->
+                            <h2>Children's</h2>
+                        </td>
+                        <td>
+                            <h3>1pm</h3>
+                        </td>
+                        <td>
+                            <h3>6pm</h3>
+                        </td>
+                        <td>
+                            <h3>12pm</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="thumbnail" src="images/genres/Art.png">
+                            <!-- Original image below sourced for educational purposes: http://sirubico.deviantart.com -->
+                            <br>
+                            <h2>Art / Foreign</h2>
+                        </td>
+                        <td>
+                            <h3>6pm</h3>
+                        </td>
+                        <td>
+                            <h3>-</h3>
+                        </td>
+                        <td>
+                            <h3>3pm</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="thumbnail" src="images/genres/Comedy 2.png">
+                            <!-- Original image below sourced for educational purposes: http://sirubico.deviantart.com -->
+                            <br>
+                            <h2>Romantic Comedy</h2>
+                        </td>
+                        <td>
+                            <h3>9pm</h3>
+                        </td>
+                        <td>
+                            <h3>1pm</h3>
+                        </td>
+                        <td>
+                            <h3>6pm</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="thumbnail" src="images/genres/Action 2.png">
+                            <!-- Original image below sourced for educational purposes: http://sirubico.deviantart.com -->
+                            <br>
+                            <h2>Action</h2>
+                        </td>
+                        <td>
+                            <h3>-</h3>
+                        </td>
+                        <td>
+                            <h3>9pm</h3>
+                        </td>
+                        <td>
+                            <h3>9pm</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <img class="banner" src="images/dolbycinema-header.png">
+            <!-- Original image below sourced for educational purposes: www.dolby.com -->
+            <h1>New experience</h1>
+            <p>You feel like you're inside the story as sound flows all around you with breathtaking realism to create a powerfully moving experience.</p>
+            <p class="copyright">© 2015 Dolby Laboratories, Inc. All rights reserved.</p>
+        </div>
     </main>
 
-    <footer>
-      &copy; CHANG YI WU 2015. Put footer info and <a href=' '>more links here</a> |
-      <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;height:31px"
-        src="http://www.w3.org/html/logo/downloads/HTML5_Logo_32.png" alt="HTML Validator" /></a> |
-      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0; height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Validator"/></a>
-        <a href="http://validator.w3.org/check?uri=referer"> Return </a>
+    <footer class="main-foot">
+        <section>
+            <p>© S3518495 C.Y. WU @ RMIT. All Rights Reserved.</p>
+            <a href="http://validator.w3.org/check?uri=referer"
+               onclick="this.href='http://validator.w3.org/check?uri=' + document.URL">
+                <!-- Original image below sourced for educational purposes: www.explosetraffic.com -->
+                <img src="images/html_validator.png" alt="Valid XHTML 5" />Html validator
+            </a>
+        </section>
     </footer>
 
   </body>

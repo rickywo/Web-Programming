@@ -1,0 +1,444 @@
+body, header, main , footer, .share-btn{
+    font-family: 'Jura', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(left, rgb(12,16,30), rgb(16, 36, 54), rgb(22, 41, 65), rgb(16, 99, 131), rgb(22, 41, 65), rgb(16, 36, 54), rgb(12,16,30)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, rgb(12,16,30), rgb(16, 36, 54), rgb(22, 41, 65), rgb(16, 99, 131), rgb(22, 41, 65), rgb(16, 36, 54), rgb(12,16,30)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, rgb(12,16,30), rgb(16, 36, 54), rgb(22, 41, 65), rgb(16, 99, 131), rgb(22, 41, 65), rgb(16, 36, 54), rgb(12,16,30)); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, rgb(12,16,30), rgb(16, 36, 54), rgb(22, 41, 65), rgb(16, 99, 131), rgb(22, 41, 65), rgb(16, 36, 54), rgb(12,16,30)); /* Standard syntax (must be last) */
+}
+main.booking {
+    width: 100%;
+    margin: 30px 0;
+    padding: 0;
+    font-size: 13px;
+    text-align: center;
+    background: url(images/bg-header.png) repeat top left;
+    display: inline-block;
+    overflow: hidden;
+}
+
+header{
+    margin: -30px 0;
+}
+
+header img.head-logo{
+    padding-top: 30px;
+}
+
+div.share-btn{
+    padding: 0 20px 0 0;
+    margin: 0 0 5px 0;
+    text-align: right;
+    overflow: auto;
+}
+
+ul.share-buttons{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.share-buttons li{
+    display: inline;
+
+}
+
+ul.share-buttons li a{
+    color: #AAAAAA;
+}
+
+ul.share-buttons li:hover a {
+    color: #FFFFFF;
+    text-shadow: 0 0 3px rgb(101,225,255);
+}
+
+nav {
+    background-color: rgb(30, 30, 40);
+}
+
+nav ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+
+nav a {
+    padding: 8px 25px 5px;
+    display: block;
+    background: rgb(30, 30, 40);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    color: #DDDDDD;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(30, 30, 40);
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+nav li:hover a {
+    color: #FFFFFF;
+    text-shadow: 0 0 1.5em rgb(101,225,255);
+    border-bottom: 1px solid #1fddff;
+}
+
+/*This section for decorating contact form*/
+
+#contact_form {
+    padding: 20px 0;
+    background: -webkit-linear-gradient(rgba(212, 9, 24,.2), rgba(16, 36, 54,0), rgba(212, 9, 24,.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(212, 9, 24,.2), rgba(16, 36, 54,0), rgba(212, 9, 24,.2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(212, 9, 24,.2), rgba(16, 36, 54,0), rgba(212, 9, 24,.2)); /* For Fx 3.6 to 15 */
+    background: linear-gradient(rgba(212, 9, 24,.2), rgba(16, 36, 54,0), rgba(212, 9, 24,.2)); /* Standard syntax (must be last) */
+}
+
+div.inner-div {
+    text-align: start;
+}
+
+#contact_form input[type=email],input[type=text]{
+    height:20px;
+    width:100%;
+}
+
+#contact_form select {
+    width: 101%;
+}
+
+#contact_form textarea {
+    height:120px;
+    width:100%;
+}
+
+/* Button Style */
+input[type=submit] {
+    font-family: 'Jura', sans-serif;
+    font-size: 1em;
+    width: 10em;
+}
+
+main{
+    margin: 40px 30px;
+    padding: 0;
+    font-size: 13px;
+    text-align: center;
+    background: url(images/bg-header.png) repeat top left;
+    display: block;
+    overflow: hidden;
+}
+
+main.movie-display {
+    margin: 40px 0;
+}
+
+div h1, h2, h3, h4, label {
+    color: #FFFFFF;
+    text-shadow: 0 0 1.5em rgb(101,225,255);
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+div h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+div h2, label {
+    color: #DDDDDD;
+    font-size: 1em;
+    text-shadow: 0 0 1em rgb(101,225,255);
+}
+
+div h3 {
+    color: #AAAAAA;
+    font-size: 1em;
+    text-shadow: none;
+    text-align: center;
+}
+
+div h4 {
+    margin: 0;
+    width: 98%;
+    color: #DDDDDD;
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0 0 1em rgb(101,225,255);
+}
+
+div h3:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 1.5em rgb(101,225,255);
+    font-size: 1em;
+    text-shadow: none;
+    text-align: center;
+}
+
+img.banner {
+    min-height : 100%;
+    min-width : 100%;
+    max-height : 100%;
+    max-width : 100%;
+}
+
+div p {
+    height:auto;
+    padding: 0 .5em;
+    font-size: 13px;
+    color: #DDDDDD;
+    text-align: center;
+    text-decoration: none;
+}
+
+p.copyright {
+    height:auto;
+    font-size: 11px;
+    color: #AAAAAA;
+    text-align: start;
+    text-decoration: none;
+}
+
+div.column {
+    padding-left: 1%;
+    float:left;
+    width:65%;
+    display: block;
+    overflow: hidden;
+}
+
+div.column-booking {
+    padding: 0;
+    float: none;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+div.right {
+    padding: 20px;
+    float: right;
+    width: 28%;
+    display: block;
+    overflow: hidden;
+    background: -webkit-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Fx 3.6 to 15 */
+    background: linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* Standard syntax (must be last) */
+
+}
+
+div.inline-column {
+    padding: 0;
+    margin-bottom: 40px;
+    float: left;
+    width: 50%;
+    display: block;
+    overflow: hidden;
+    background: -webkit-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Fx 3.6 to 15 */
+    background: linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* Standard syntax (must be last) */
+}
+
+div.column-sub {
+    background: url(images/bg-hr.png) repeat-x;
+    text-align: start;
+    padding: 20px 5px;
+    display: block;
+}
+
+table {
+    padding: 0px;
+    background-color: rgba(255,50,50,.1);
+    width: 100%;
+}
+
+table tr {
+    background-color: rgba(255,255,255,0.1);
+}
+
+table.schedule-table tr td, table.price-table tr td {
+    padding: 0 .5em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.movie-table {
+    padding: 2px;
+    width: 100%;
+}
+
+table.movie-table tr td {
+    padding: 0 1em;
+    text-align: start;
+    vertical-align: middle;
+}
+
+table.movie-table tr.story {
+    height: 120px;
+}
+
+table.movie-table tr td h2 {
+    color: #DDDDDD;
+    font-size: 1em;
+    text-align: start;
+    text-shadow: 0 0 1em rgb(101,225,255);
+}
+
+table.movie-table tr td h3 {
+    color: #AAAAAA;
+    font-size: 1em;
+    text-shadow: none;
+    text-align: start;
+}
+
+img.thumbnail {
+    margin: 8px 0 0 0;
+    width: 128px;
+    height: auto;
+}
+
+img.classify {
+    vertical-align: middle;
+    margin: .5em 0;
+    width: 3em;
+    height: auto;
+}
+
+@media screen and (max-width:750px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+    nav li {
+        width: 100%;
+        height: auto;
+        display:block;
+    }
+
+    nav li:hover a {
+        color: #FFFFFF;
+        background-color: rgba(255,50,50,.1);
+        text-shadow: 0 0 1.5em rgb(101,225,255);
+        border-bottom: none;
+    }
+
+    main{
+        margin: 80px 0;
+        padding: 0;
+        font-size: 13px;
+        text-align: center;
+        background: url(images/bg-header.png) repeat top left;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    div p {
+        padding: 0 20px 10px 20px;
+        text-align: center;
+    }
+
+    div.inline-column {
+        padding: 0;
+        float: none;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        background: -webkit-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* For Fx 3.6 to 15 */
+        background: linear-gradient(rgba(212, 9, 24,.4), rgba(16, 36, 54,0)); /* Standard syntax (must be last) */
+    }
+
+    div.column {
+        padding: 0;
+        float: none;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    div.right {
+        padding: 0;''
+        float: none;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        background: -webkit-linear-gradient(rgba(212, 9, 24, .4), rgba(16, 36, 54, 0)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(212, 9, 24, .4), rgba(16, 36, 54, 0)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(212, 9, 24, .4), rgba(16, 36, 54, 0)); /* For Fx 3.6 to 15 */
+        background: linear-gradient(rgba(212, 9, 24, .4), rgba(16, 36, 54, 0)); /* Standard syntax (must be last) */
+
+    }
+}
+
+
+
+
+div.content {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: block;
+}
+
+footer.main-foot{
+    color: rgb(221, 221, 221);
+    font-size: 12px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+footer section{
+    display: block;
+    padding: 20px 20px;
+}
+
+footer section a, a.book-button {
+    color: #DDDDDD;
+    margin: 0 0.5em;
+}
+
+a.book-button {
+    margin: 0;
+}
+
+/* mouse over link */
+footer section a:hover , a.book-button:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 1.5em rgb(101,225,255);
+}
+
+
+footer section a img{
+    margin-right: 5px;
+    height: 1.5em;
+    width: auto;
+}
+
+
+/* booking.html */
+/*, a.time, a.adult-t,  */
+a.s-time:hover,a.s-day:hover, a.adult-t:hover, a.child-t:hover, a.conce-t:hover, a.fadult-t:hover, a.fchild-t:hover, a.beans-t:hover, a.beanc-t:hover, a.childbean-t:hover{
+    cursor: pointer;
+}
+
+.hidden
+{
+    display:none;
+    visibility:hidden;
+}
+

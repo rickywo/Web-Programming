@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SILVERADO CINEMA</title>
+    <link href='http://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="myextjs.js"></script>
+</head>
+<body>
+<header>
+    <img class="head-logo" src="images/logo.png" alt="Logo" height="90" width="290"/>
+</header>
+<main class="booking">
+    <div class="column-booking" style="text-align: start;">
+        <form id="booking_form" action="http://titan.csit.rmit.edu.au/~e54061/wp/form-tester.php" method="post">
+            <h1>Online Booking</h1>
+            <table class="movie-table">
+                <tr>
+                    <td>
+                        <h2>Movie Name</h2>
+                    </td>
+                    <td colspan="7">
+                        <h2 id="movie-name"></h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Session Day</h2>
+                    </td>
+                    <td>
+                        <h3><a class="s-day" id="mon">Mon</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-day" id="tue">Tue</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-day" id="wed">Wed</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-day" id="thu">Thu</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-day" id="fri">Fri</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-day" id="sat">Sat</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-day" id="sun">Sun</a></h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Session Time</h2>
+                    </td>
+                    <td>
+                        <h3><a class="s-time" id="1pm">1pm</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-time" id="3pm">3pm</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-time" id="6pm">6pm</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-time" id="9pm">9pm</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="s-time" id="12pm">12pm</a></h3>
+                    </td>
+                </tr>
+            </table>
+            <table class="movie-table">
+                <tr>
+                    <td>
+                        <h2>Ticket Type</h2>
+                    </td>
+                    <td colspan="7">
+                        <h2>Quantity</h2>
+                    </td>
+                    <td>
+                        <h2>Subtotal Price</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Adult</h2>
+                    </td>
+                    <td>
+                        <h3><a class="adult-t" id="adult-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="adult-t" id="adult-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="adult-t" id="adult-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="adult-t" id="adult-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="adult-t" id="adult-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="adult-t" id="adult-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="adult-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Concession</h2>
+                    </td>
+                    <td>
+                        <h3><a class="conce-t" id="conce-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="conce-t" id="conce-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="conce-t" id="conce-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="conce-t" id="conce-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="conce-t" id="conce-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="conce-t" id="conce-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="conce-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Child</h2>
+                    </td>
+                    <td>
+                        <h3><a class="child-t" id="child-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="child-t" id="child-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="child-t" id="child-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="child-t" id="child-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="child-t" id="child-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="child-t" id="child-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="child-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>First Class Adult</h2>
+                    </td>
+                    <td>
+                        <h3><a class="fadult-t" id="fadult-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fadult-t" id="fadult-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fadult-t" id="fadult-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fadult-t" id="fadult-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fadult-t" id="fadult-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fadult-t" id="fadult-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="fadult-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Child</h2>
+                    </td>
+                    <td>
+                        <h3><a class="fchild-t" id="fchild-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fchild-t" id="fchild-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fchild-t" id="fchild-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fchild-t" id="fchild-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fchild-t" id="fchild-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="fchild-t" id="fchild-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="fchild-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Beanbag (Single)</h2>
+                    </td>
+                    <td>
+                        <h3><a class="beans-t" id="beans-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beans-t" id="beans-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beans-t" id="beans-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beans-t" id="beans-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beans-t" id="beans-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beans-t" id="beans-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="beans-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Beanbag (Couple)</h2>
+                    </td>
+                    <td>
+                        <h3><a class="beanc-t" id="beanc-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beanc-t" id="beanc-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beanc-t" id="beanc-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beanc-t" id="beanc-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beanc-t" id="beanc-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="beanc-t" id="beanc-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="beanc-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Child x3</h2>
+                    </td>
+                    <td>
+                        <h3><a class="childbean-t" id="childbean-t-1">1</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="childbean-t" id="childbean-t-2">2</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="childbean-t" id="childbean-t-3">3</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="childbean-t" id="childbean-t-4">4</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="childbean-t" id="childbean-t-5">5</a></h3>
+                    </td>
+                    <td>
+                        <h3><a class="childbean-t" id="childbean-t-6">6</a></h3>
+                    </td>
+                    <td>
+                        <h3><a href="contact.html">Group Ticket</a></h3>
+                    </td>
+                    <td>
+                        <h3 id="childbean-t-st">0</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <h2>Total Price</h2>
+                    </td>
+                    <td>
+                        <h2 id="total-price">0</h2>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </main>
+</body>
+</html>

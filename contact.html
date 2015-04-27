@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+        <title>SILVERADO CINEMA</title>
+        <link href='http://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+    <header>
+        <img class="head-logo" src="images/logo.png" alt="Logo" height="90" width="290"/>
+    </header>
+    <div class="share-btn">
+        <ul class="share-buttons">
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u=&amp;t=" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/intent/tweet?source=&amp;text=:%20" target="_blank" title="Tweet"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+            <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+            <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title=&amp;summary=&amp;source=" target="_blank" title="Share on LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="movie-display">
+        <div class="column" style="text-align: start;">
+            <h1>Enquiry</h1>
+            <p>We would greatly appreciate it if you kindly leave us some feedback</p>
+            <form id="contact_form" action="http://titan.csit.rmit.edu.au/~e54061/wp/form-tester.php" method="post">
+                <table class="movie-table">
+                    <tr>
+                        <td>
+                            <h2>Enquiry type:</h2>
+                        </td>
+                        <td>
+                            <select name="subject">
+                                <option>General Enquiry</option>
+                                <option>Group and Corporate Bookings</option>
+                                <option>Suggestions and Complains</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2>E-mail:</h2>
+                        </td>
+                        <td>
+                            <input type="email" name="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2></h2>
+                        </td>
+                        <td>
+                            <textarea name="message" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Submit" style="float:right; margin: .5em">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="right">
+            <img class="banner" src="images/dolbycinema-header.png">
+            <!-- Original image below sourced for educational purposes: www.dolby.com -->
+            <h1>New experience</h1>
+            <p>You feel like you're inside the story as sound flows all around you with breathtaking realism to create a powerfully moving experience.</p>
+            <p class="copyright">© 2015 Dolby Laboratories, Inc. All rights reserved.</p>
+        </div>
+    </main>
+    <footer class="main-foot">
+        <section>
+            <p>© S3518495 C.Y. WU @ RMIT. All Rights Reserved.</p>
+            <a href="http://validator.w3.org/check?uri=referer"
+               onclick="this.href='http://validator.w3.org/check?uri=' + document.URL">
+                <!-- Original image below sourced for educational purposes: www.explosetraffic.com -->
+                <img src="images/html_validator.png" alt="Valid XHTML 5" />Html validator
+            </a>
+        </section>
+    </footer>
+
+</html>
