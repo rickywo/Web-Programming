@@ -1,62 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ac835aa-23c3-4173-a215-9ebeb8128e1a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/CGenreTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/CPriceTable.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/CShare.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index-view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/movie.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/navibar.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/movie.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/booking-bak.html" afterPath="$PROJECT_DIR$/app/views/booking-bak.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/booking.html" afterPath="$PROJECT_DIR$/app/views/booking.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/app/views/contact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/3idiot.jpg" afterPath="$PROJECT_DIR$/app/views/img/3idiot.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/Logo_Dolby_Cinema.png" afterPath="$PROJECT_DIR$/app/views/img/Logo_Dolby_Cinema.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/begin-gain.jpg" afterPath="$PROJECT_DIR$/app/views/img/begin-gain.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/bg-header.png" afterPath="$PROJECT_DIR$/app/views/img/bg-header.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/bg-hr.png" afterPath="$PROJECT_DIR$/app/views/img/bg-hr.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/big-hero-6.jpg" afterPath="$PROJECT_DIR$/app/views/img/big-hero-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/classification/m.png" afterPath="$PROJECT_DIR$/app/views/img/classification/m.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/classification/pg.png" afterPath="$PROJECT_DIR$/app/views/img/classification/pg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/dolbycinema-header.png" afterPath="$PROJECT_DIR$/app/views/img/dolbycinema-header.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Action 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Action 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Action 3.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Action 3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Action.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Action.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Adventure 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Adventure 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Adventure 3.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Adventure 3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Adventure 4.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Adventure 4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Adventure 5.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Adventure 5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Adventure.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Adventure.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Art.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Art.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Children 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Children 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Children.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Children.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Comedy 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Comedy 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Comedy.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Comedy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Drama.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Drama.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Fantasy.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Fantasy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Horror 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Horror 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Horror 3.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Horror 3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Horror.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Horror.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Magic 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Magic 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Magic.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Magic.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Music 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Music 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Music.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Music.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Romance 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Romance 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/Romance.png" afterPath="$PROJECT_DIR$/app/views/img/genres/Romance.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/SciFi 2.png" afterPath="$PROJECT_DIR$/app/views/img/genres/SciFi 2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/SciFi.png" afterPath="$PROJECT_DIR$/app/views/img/genres/SciFi.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/genres/TV.png" afterPath="$PROJECT_DIR$/app/views/img/genres/TV.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/html_validator.png" afterPath="$PROJECT_DIR$/app/views/img/html_validator.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/interstellar.jpg" afterPath="$PROJECT_DIR$/app/views/img/interstellar.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="$PROJECT_DIR$/app/views/img/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/overlay-light.png" afterPath="$PROJECT_DIR$/app/views/img/overlay-light.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/tdk.jpg" afterPath="$PROJECT_DIR$/app/views/img/tdk.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/myextjs.js" afterPath="$PROJECT_DIR$/app/views/myextjs.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/app/views/css/style.css" />
+    <list default="true" id="9ac835aa-23c3-4173-a215-9ebeb8128e1a" name="Default" comment="Rejected commit: Default">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/booking-view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/CMovieView.php" afterPath="$PROJECT_DIR$/app/views/CMovieView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Web-Programming.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,12 +29,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="movie.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="movie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/movie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1330377" vertical-offset="0" max-vertical-offset="451">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
               <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/booking.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.2916665" vertical-offset="3470" max-vertical-offset="3855">
+              <caret line="243" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="251" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking-view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/booking-view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.2083335" vertical-offset="490" max-vertical-offset="3855">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#10;n#table#1;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#0;n#tr#10;n#table#1;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie-view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/movie-view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.5416665" vertical-offset="107" max-vertical-offset="630">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMovieView.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/CMovieView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3713528" vertical-offset="1375" max-vertical-offset="2340">
+              <caret line="101" column="27" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+              <folding>
+                <marker date="1431386233000" expanded="true" signature="3531:4457" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="3731:4450" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="3736:3963" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="3741:3771" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="3776:3957" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="3968:4038" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="3973:3997" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4002:4032" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4043:4110" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4048:4068" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4073:4104" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4115:4354" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4120:4143" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4148:4348" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4373:4441" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4378:4399" placeholder="..." />
+                <marker date="1431386233000" expanded="true" signature="4404:4435" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +104,28 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="150">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
+            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150">
+              <caret line="2" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="booking.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/booking.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact-view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/contact-view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="18.333334" vertical-offset="800" max-vertical-offset="1185">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -137,7 +167,6 @@
         <option value="/HTML Fragment (CMovieView.php:3309).html" />
         <option value="/HTML Fragment (CMovieView.php:3336).html" />
         <option value="$PROJECT_DIR$/app/views/movie-view.php" />
-        <option value="$PROJECT_DIR$/app/views/CMovieView.php" />
         <option value="$PROJECT_DIR$/app/views/index-view.php" />
         <option value="$PROJECT_DIR$/app/views/CAdColumn.php" />
         <option value="$PROJECT_DIR$/app/views/css/style.css" />
@@ -148,6 +177,9 @@
         <option value="$PROJECT_DIR$/app/views/utility.php" />
         <option value="$PROJECT_DIR$/app/views/myextjs.js" />
         <option value="$PROJECT_DIR$/movie.php" />
+        <option value="$PROJECT_DIR$/app/views/booking-view.php" />
+        <option value="$PROJECT_DIR$/booking.php" />
+        <option value="$PROJECT_DIR$/app/views/CMovieView.php" />
       </list>
     </option>
   </component>
@@ -341,7 +373,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426728135547</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rejected commit: Default">
+      <created>1431386118663</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1431386118663</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -368,24 +406,24 @@
     <frame x="0" y="22" width="1280" height="719" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22615385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22615385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12109375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290938" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24918832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12109375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29725087" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3408" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -615,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/CMovieView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5566037" vertical-offset="730" max-vertical-offset="2340">
-          <caret line="139" column="14" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/CAdColumn.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.833333" vertical-offset="145" max-vertical-offset="705">
@@ -638,14 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="180">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/booking.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="98.125" vertical-offset="2355" max-vertical-offset="3855">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,22 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contact-view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1185">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/movie-view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261" vertical-offset="32" max-vertical-offset="630">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10033445" vertical-offset="0" max-vertical-offset="598">
@@ -717,19 +724,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/movie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/movie.php">
+    <entry file="file://$PROJECT_DIR$/app/views/contact-view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1330377" vertical-offset="0" max-vertical-offset="451">
+        <state vertical-scroll-proportion="18.333334" vertical-offset="800" max-vertical-offset="1185">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/booking.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2916665" vertical-offset="3470" max-vertical-offset="3855">
+          <caret line="243" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="251" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="150">
+          <caret line="2" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="150">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/movie-view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5416665" vertical-offset="107" max-vertical-offset="630">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/booking-view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.2083335" vertical-offset="490" max-vertical-offset="3855">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#10;n#table#1;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#tr#10;n#table#1;n#form#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/CMovieView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3713528" vertical-offset="1375" max-vertical-offset="2340">
+          <caret line="101" column="27" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+          <folding>
+            <marker date="1431386233000" expanded="true" signature="3531:4457" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="3731:4450" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="3736:3963" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="3741:3771" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="3776:3957" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="3968:4038" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="3973:3997" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4002:4032" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4043:4110" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4048:4068" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4073:4104" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4115:4354" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4120:4143" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4148:4348" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4373:4441" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4378:4399" placeholder="..." />
+            <marker date="1431386233000" expanded="true" signature="4404:4435" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

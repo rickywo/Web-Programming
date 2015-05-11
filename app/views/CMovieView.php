@@ -132,7 +132,7 @@ class CMovieView
 <h2>Booking</h2>
 </td>
 <td>
-<h3><a class='book-button' href='booking.html' target='popup' onclick='window.open(this.href,'Online Booking','resizable=0, width=640, height=720'); return false;'>Go Online Booking Now</a></h3>
+<h3><a class='book-button' href='booking.php' target='popup' onclick='window.open(this.href,'Online Booking','resizable=0, width=640, height=720'); return false;'>Go Online Booking Now</a></h3>
 </td>
 </tr>
 <tr class='story'>
