@@ -98,7 +98,7 @@ class CMovieView
         $html = "";
         foreach ($items as $item) {
             $html .=
-                "<div class='inline-column'><img class='banner' src='app/views/img/{$item['src']}'>
+                "<div class='inline-column'><img class='banner' src='img/{$item['src']}'>
             <!-- Original image below sourced for educational purposes: {$item['org']} -->
 <h1>{$item['title']}</h1>
 <table class='movie-table'>
