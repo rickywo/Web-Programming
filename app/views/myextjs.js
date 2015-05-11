@@ -28,15 +28,15 @@ function loadSessionDays() {
 }
 
 function loadSessionTimes() {
-    var film = document.getElementById("film");
+    var day = document.getElementById("day");
     var time = document.getElementById("time");
     for(var index=0;index<time.length;index++){
         time.options[index].disabled = true;
     }
-    for(var index=0;index<sessiontimes[film.selectedIndex].length;index++){
-        time.options[sessiontimes[film.selectedIndex][index]].disabled = false;
+    for(var index=0;index<sessiontimes[day.selectedIndex].length;index++){
+        time.options[sessiontimes[day.selectedIndex][index]].disabled = false;
     }
-    time.options[sessiontimes[film.selectedIndex][0]].selected = true;
+    time.options[sessiontimes[day.selectedIndex][0]].selected = true;
     optTotal();
 }
 
