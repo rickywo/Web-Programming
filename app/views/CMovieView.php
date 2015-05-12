@@ -140,7 +140,10 @@ $jsonData = '{
     }
   }
 }';
-$movies = json_decode($jsonData, true);
+//$movies = json_decode($jsonData, true);
+include_once("CDbConnect.php");
+$t = new CDbConnect('app/views/db/theatre.db');
+$movies = json_decode($t->getAllMovieInfo(), true);
 
 class CMovieView
 {
