@@ -1,44 +1,13 @@
 /**
  * Created by Chang-Yi Wu on 2015/3/19.
  */
-var sessiondays = [];
-sessiondays[0] = [2,3,4,5,6];
-sessiondays[1] = [0,1,2,3,4,5,6];
-sessiondays[2] = [0,1,2,3,4,5,6];
-sessiondays[3] = [0,1,5,6];
-var sessiontimes = [];
-sessiontimes[0] = [3,3,3,3,3];
-sessiontimes[1] = [3,3,0,0,0,2,2];
-sessiontimes[2] = [0,0,2,2,2,4,4];
-sessiontimes[3] = [2,2,1,1];
-function loadSessionDays() {
-    var film = document.getElementById("film");
-    var day = document.getElementById("day");
-    for(var index=0;index<day.length;index++){
-        day.options[index].disabled = true;
-    }
-    for(var index=0;index<time.length;index++){
-        time.options[index].disabled = true;
-    }
-    for(var index=0;index<sessiondays[film.selectedIndex].length;index++){
-        day.options[sessiondays[film.selectedIndex][index]].disabled = false;
-    }
-    day.options[sessiondays[film.selectedIndex][0]].selected = true;
-    loadSessionTimes();
+
+
+function setSessionTime() {
+    alert('test');
 }
 
-function loadSessionTimes() {
-    var day = document.getElementById("day");
-    var time = document.getElementById("time");
-    for(var index=0;index<time.length;index++){
-        time.options[index].disabled = true;
-    }
-    for(var index=0;index<sessiontimes[day.selectedIndex].length;index++){
-        time.options[sessiontimes[day.selectedIndex][index]].disabled = false;
-    }
-    time.options[sessiontimes[day.selectedIndex][0]].selected = true;
-    optTotal();
-}
+
 
 function checkRate() { //return 0=flat 1=normal
     var day = document.getElementById("day").selectedIndex;

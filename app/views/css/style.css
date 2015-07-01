@@ -127,7 +127,7 @@ div.inner-div {
 /* Button Style */
 input[type=submit] {
     font-family: 'Jura', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     width: 10em;
 }
 
@@ -282,7 +282,13 @@ table.movie-table {
     width: 100%;
 }
 
-table.movie-table tr td {
+table.booking-info-table, table.ticket-table {
+    padding: 2px;
+    width: 50%;
+    background-color: transparent;
+}
+
+table.movie-table tr td, table.booking-info-table tr td, table.ticket-table tr td {
     padding: 0 1em;
     text-align: start;
     vertical-align: middle;
@@ -292,14 +298,14 @@ table.movie-table tr.story {
     height: 120px;
 }
 
-table.movie-table tr td h2 {
+table.movie-table tr td h2, table.booking-info-table tr td h2, table.ticket-table tr td h2 {
     color: #DDDDDD;
     font-size: 1em;
     text-align: start;
     text-shadow: 0 0 1em rgb(101,225,255);
 }
 
-table.movie-table tr td h3 {
+table.movie-table tr td h3, table.booking-info-table tr td h3, table.ticket-table tr td h3 {
     color: #AAAAAA;
     font-size: 1em;
     text-shadow: none;
@@ -380,6 +386,11 @@ img.classify {
         background: linear-gradient(rgba(212, 9, 24, .4), rgba(16, 36, 54, 0)); /* Standard syntax (must be last) */
 
     }
+
+    table.booking-info-table, table.ticket-table {
+        padding: 2px;
+        width: 100%;
+    }
 }
 
 
@@ -407,7 +418,7 @@ footer section{
     padding: 20px 20px;
 }
 
-footer section a, a.book-button {
+footer section a, a.book-button, a.book-button-invalid {
     color: #DDDDDD;
     margin: 0 0.5em;
 }
@@ -416,6 +427,11 @@ a.book-button {
     margin: 0;
 }
 
+a.book-button-invalid {
+    color: #FFFFFF;
+    margin: 0;
+    text-shadow: 0 0 1em rgb(255,101,101);
+}
 /* mouse over link */
 footer section a:hover , a.book-button:hover {
     color: #FFFFFF;

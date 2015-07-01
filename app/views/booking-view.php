@@ -1,239 +1,114 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     <title>SILVERADO CINEMA</title>
-    <link href='http://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Jura:500' rel='stylesheet' type='text/css'>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="myextjs.js"></script>
-
-
+    <script src="app/views/cartjs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <style>
+        <?php require_once('css/style.css'); ?>
+        <?php require_once('css/modaldialog.css'); ?>
+    </style>
+    <?php
+    $mvtitle = $_GET['mvtitle'];
+    include_once("CDbConnect.php");
+    include("CMovieView.php");
+    $t = new CDbConnect('app/views/db/theatre.db');
+    $movies = json_decode($t->getMovieInfoByTitle($mvtitle), true);
+    $sessions = json_decode($t->getSeesionTimeByTitle($mvtitle), true);
+    $movies[0]['sessions'] = $sessions[0];
+    unset($t);
+    ?>
 </head>
-<body onload="loadSessionDays();">
+<body>
 <header>
-    <img class="head-logo" src="img/logo.png" alt="Logo" height="90" width="290"/>
+    <img class="head-logo" src="app/views/img/logo.png" alt="Logo" height="90" width="290"/>
 </header>
 <main class="booking">
-    <div class="column-booking" style="text-align: start;">
-        <form id="booking_form" action="http://titan.csit.rmit.edu.au/~e54061/wp/form-tester-2.php" method="post">
+    <div class="column-booking" style="text-align: center;">
+        <form id="booking_form" action="cart.php" method="post">
+
             <h1>Online Booking</h1>
-            <table class="movie-table">
-                <tr>
-                    <td>
-                        <h2>Film Name</h2>
+            <?php
+                echo CMovieView::GenerateSingleMovieView($movies[0]);
+            // Generates hidden input for holding title
+
+            // Generates Session Times
+            $html = '<input type="hidden" name="film" value="'.$movies[0]['title'].'"></input>';
+            $html .= '<table class="booking-info-table">
+                        <tr>
+                            <td>
+                                <h2>Session Times</h2>
+                            </td>
+                            <td colspan="7">
+                                <select name="day">';
+            $index = 0;
+            while ($index<7) {
+                $d = current($sessions[0]);
+                if(!is_null($d)){$html .= '<option value='.key($sessions[0]).'>'.key($sessions[0]).', '.$d.'</option>';}
+                next($sessions[0]);
+                $index++;
+            }
+            $html.= '</select>
                     </td>
-                    <td colspan="7">
-                        <select id="film" name="film" onchange='loadSessionDays();'>
-                            <option value=0>The Dark Knight Rises</option>
-                            <option value=1>Begin Again</option>
-                            <option value=2>Big Hero 6</option>
-                            <option value=3>3 Idiots</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Session Day</h2>
-                    </td>
-                    <td colspan="7">
-                        <select id="day" name="day" onchange='loadSessionTimes();'>
-                            <option value=0>Mon</option>
-                            <option value=1>Tue</option>
-                            <option value=2>Wed</option>
-                            <option value=3>Thu</option>
-                            <option value=4>Fri</option>
-                            <option value=5>Sat</option>
-                            <option value=6>Sun</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Session Time</h2>
-                    </td>
-                    <td colspan="7">
-                        <select id="time" name="time">
-                            <option value=0>1PM</option>
-                            <option value=1>3PM</option>
-                            <option value=2>6PM</option>
-                            <option value=3>9PM</option>
-                            <option value=0>12PM</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-            <table class="movie-table">
-                <tr>
-                    <td>
-                        <h2>Ticket Type</h2>
-                    </td>
-                    <td colspan="7">
-                        <h2>Quantity</h2>
-                    </td>
-                    <td>
-                        <h2>Subtotal Price</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Adult</h2>
-                    </td>
-                    <td colspan="7">
-                        <select id="s1" name="SA"  onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
-                            <option value=6>6</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st1">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Concession</h2>
-                    </td>
-                    <td colspan="7">
-                        <select name="SP" id="s2" onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
-                            <option value=6>6</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st2">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Child</h2>
-                    </td>
-                    <td colspan="7">
-                        <select name="SC" id="s3" onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
-                            <option value=6>6</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st3">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>First Class Adult</h2>
-                    </td>
-                    <td colspan="7">
-                        <select name="FA" id="s4" onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
-                            <option value=6>6</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st4">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>First Class Child</h2>
-                    </td>
-                    <td colspan="7">
-                        <select name="FC" id="s5"  onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
-                            <option value=6>6</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st5">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Beanbag (Single)</h2>
-                    </td>
-                    <td colspan="7">
-                        <select name="B1" id="s6" onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st6">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Beanbag (Couple)</h2>
-                    </td>
-                    <td colspan="7">
-                        <select name="B2" id="s7" onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st7">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h2>Child x3</h2>
-                    </td>
-                    <td colspan="7">
-                        <select name="B3" id="s8" onchange="optTotal();">
-                            <option value=0>0</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                        </select>
-                    </td>
-                    <td>
-                        <h3 id="st8">0</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="8">
-                        <h2>Total Price</h2>
-                    </td>
-                    <td>
-                        <h2 id="total-price"><input id="t-price" type="text" name="price" value="0"></h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="9" style="overflow: hidden;">
-                        <input type="submit" value="Submit" style="float:right; margin: .5em">
-                    </td>
-                </tr>
-            </table>
+                </tr>';
+
+            // Generates Tickets List
+            $ticketArray = array(
+                array('Adult', 'SA'),
+                array('Concession', 'SP'),
+                array('Child', 'SC'),
+                array('First Class Adult', 'FA'),
+                array('First Class Child', 'FC'),
+                array('Beanbag','B1'),
+                array('Beanbag (Couple)', 'B2'),
+                array('Child x3', 'B3')
+            );
+
+            $html .= '</table>
+                        <table class="ticket-table">
+                            <tr>
+                                <td>
+                                    <h2>Ticket Type</h2>
+                                </td>
+                                <td colspan="7">
+                                    <h2>Quantity</h2>
+                                </td>
+                            </tr>';
+            while($d=current($ticketArray)) {
+                $html .= '<tr>
+                            <td>
+                                <h2>'.$d[0].'</h2>
+                            </td>
+                            <td colspan="8">
+                                <select name='.$d[1].'>
+                                    <option value=0>0</option>
+                                    <option value=1>1</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5</option>
+                                    <option value=6>6</option>
+                                </select>
+                            </td>
+                        </tr>';
+                next($ticketArray);
+            }
+            $html .= '<tr>
+                        <td colspan="9" style="overflow: hidden; text-align: center;">
+                            <input type="submit" value="Add to cart" style="margin: .7em .2em .5em .1em;">
+                        </td>
+                        </tr>
+                    </table>';
+            echo $html;
+            ?>
         </form>
     </div>
 </main>
