@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" promptOnLocalOverwrite="false" uploadOnCheckin="a37e4e3e-54f0-4dc4-bfb6-3001db9c2d09">
-    <option name="myUploadOnCheckinName" value="titan.csit.rmit.edu.au" />
-  </component>
+  <component name="PublishConfigData" promptOnLocalOverwrite="false" persistUploadOnCheckin="false" />
 </project>

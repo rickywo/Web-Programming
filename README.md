@@ -31,7 +31,7 @@ Simply clone this repository.
 
 3. **Shopping Cart**
 
-![Shopping Cart page](images/shop-cart.png)
+![Shopping Cart page](images/shop_cart.png)
 
 4. **Booking Page**
 
@@ -39,6 +39,6 @@ Simply clone this repository.
 
 4. **Responsive Web Design**
 
-![example page](images/responsive-1.png)
+![example page 1](images/responsive_1.png)
 
-![example page](images/responsive-2.png)
+![example page 2](images/responsive_2.png)
