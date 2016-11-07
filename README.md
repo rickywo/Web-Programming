@@ -39,6 +39,6 @@ Simply clone this repository.
 
 4. **Responsive Web Design**
 
-![example page 1](images/responsive_1.png)
+![example page 1](images/responsive_1.PNG)
 
-![example page 2](images/responsive_2.png)
+![example page 2](images/responsive_2.PNG)
